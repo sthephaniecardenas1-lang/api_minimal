@@ -10,14 +10,14 @@ todo sale bien, es el equipo ya actualizado, con el mismo id de siempre pero con
 nombre y la categoria cambiados.
 
 2. ¿Cómo localiza el equipo a actualizar dentro de la lista (por id)?
-Ahí uso un next() con una especie de bucle metido adentro, que va recorriendo la
+Yo use un next() con bucle que esta dentro, que va recorriendo la
 lista de equipos buscando cual tiene el mismo id que el que llego. Y le puse que si
-no encuentra nada, en vez de tirar un error feo de Python, mejor me devuelva None,
+no encuentra nada, en vez de tirar un error de Python, mejor me devuelva None,
 para poder manejarlo yo con calma despues.
 
 3. ¿Cómo valida el nombre duplicado excluyendo al propio equipo que se edita?
 ¿Por qué es importante esa exclusión?
-Ahí reviso si algun otro equipo ya tiene ese mismo nombre, pero le agrego la
+Se revisa si algun otro equipo ya tiene ese mismo nombre y le agrego la
 condicion de que el id sea distinto al que estoy editando. Eso es importante
 porque, si no le pongo esa exclusion, uno querria solo actualizar la categoria y
 dejar el nombre igual, y el codigo se pondria a comparar el equipo consigo mismo,
